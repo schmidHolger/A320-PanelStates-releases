@@ -1,0 +1,80 @@
+name: 🙋 Support / Question
+description: Ask a question or get help (installation, usage, compatibility)
+title: "[Support]: "
+labels: ["question"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for questions and support. For confirmed bugs, please use the Bug report template.
+
+  - type: input
+    id: tool_version
+    attributes:
+      label: Tool version
+      description: The version you installed (e.g. v1.2.3).
+      placeholder: "v1.2.3"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      options:
+        - Installation
+        - Update / Upgrade
+        - Usage / How-to
+        - Compatibility (MSFS / Add-ons / Hardware)
+        - Performance
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install_type
+    attributes:
+      label: Installation type
+      options:
+        - ZIP (manual install)
+        - Installer (EXE/MSI)
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 11
+        - Windows 10
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question / problem description
+      description: What do you need help with?
+      placeholder: "I tried ..., but ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_tried
+    attributes:
+      label: What have you tried already?
+      placeholder: "I already tried..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots (optional)
+      description: Attach or paste anything relevant.
+    validations:
+      required: false
