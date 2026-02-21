@@ -1,0 +1,9 @@
+Copyright © 2026 Holger Schmid. All rights reserved.
+
+This software is provided as binary only.
+
+Permission is granted to use this software for private, non-commercial purposes.
+
+Redistribution is allowed only if the software is distributed unchanged and in its original form, including this license file.
+
+Modification, reverse engineering, or redistribution of modified versions is not permitted without explicit written permission.
