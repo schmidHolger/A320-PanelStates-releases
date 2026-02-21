@@ -1,0 +1,115 @@
+name: 🐞 Bug report
+description: Report a problem with the latest released version
+title: "[Bug]: "
+labels: ["bug"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill out the form so I can reproduce and fix it.
+
+  - type: checkboxes
+    id: latest
+    attributes:
+      label: Version check
+      options:
+        - label: I am using the latest released version from this repository.
+          required: true
+        - label: I searched existing issues and didn't find a duplicate.
+          required: true
+
+  - type: input
+    id: tool_version
+    attributes:
+      label: Tool version
+      description: The version you installed (e.g. v1.2.3).
+      placeholder: "v1.2.3"
+    validations:
+      required: true
+
+  - type: input
+    id: msfs_version
+    attributes:
+      label: MSFS version (if applicable)
+      description: e.g. MSFS 2024, build number if known.
+      placeholder: "MSFS 2024 (e.g. 1.xx.x.x)"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: install_type
+    attributes:
+      label: Installation type
+      options:
+        - ZIP (manual install)
+        - Installer (EXE/MSI)
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 11
+        - Windows 10
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened?
+      description: Describe the problem clearly.
+      placeholder: "When I..., the app..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide steps so I can reproduce the issue.
+      placeholder: |
+        1. Install version ...
+        2. Start the tool ...
+        3. Click ...
+        4. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: "I expected ..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / error messages
+      description: Paste relevant logs or error messages. If large, attach a file.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / recordings
+      description: Drag & drop images/videos here if they help.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Anything else that might help (hardware, peripherals, add-ons, etc.).
+    validations:
+      required: false
