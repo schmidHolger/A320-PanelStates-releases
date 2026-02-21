@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/<OWNER>/<REPO>/discussions
+    about: Please use Discussions for general questions and community Q&A.
+  - name: 📦 Releases / Downloads
+    url: https://github.com/<OWNER>/<REPO>/releases
+    about: Download the latest version here.
